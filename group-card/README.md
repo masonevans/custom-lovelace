@@ -9,6 +9,7 @@ Is a simple card that expands a group to a list of entities to be used with `ent
 | type | string | **Required** | `custom:group-card`
 | card | object | **Required** | Card object 
 | group | string | **Required** | The entity_id of a group
+| expand_groups | boolean | optional | Expand nested groups into entities
 
 Card object
 
@@ -29,5 +30,16 @@ Show all with some exceptions:
   group: group.bedroom
 ```
 
+Expand nested groups:
+```yaml
+- type: custom:group-card
+  card:
+    type: entities
+    title: Nested groups
+  group: group.group_of_groups
+  expand_groups: true
+```
+
 ## Credits
 - [ciotlosm](https://github.com/ciotlosm)
+- [masonevans](https://github.com/masonevans)
