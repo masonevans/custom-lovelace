@@ -1,3 +1,6 @@
+## 0.0.3
+Support for expanding nested groups
+
 ## 0.0.2
 Fix for card dissapearing when switching tabs
 
